@@ -1,0 +1,24 @@
+diff -Nru lsvpd-1.6.4.orig/Makefile.am lsvpd-1.6.4/Makefile.am
+--- lsvpd-1.6.4.orig/Makefile.am	2008-03-12 21:14:32.000000000 +0100
++++ lsvpd-1.6.4/Makefile.am	2008-06-30 19:43:44.000000000 +0200
+@@ -40,7 +40,7 @@
+ lsmcode_SOURCES = src/output/lsmcode.cpp \
+ 		$(update_h_files)
+ 
+-vpdupdate_LDADD = -L. -lz -lstdc++ -lvpd_cxx -lsgutils
++vpdupdate_LDADD = -L. -lz -lstdc++ -lvpd_cxx -lsgutils2
+ vpdupdate_LDFLAGS = -Wall
+ lsvpd_LDADD = -L. -lz -lstdc++ -lvpd_cxx
+ lsvpd_LDFLAGS = -Wall
+diff -Nru lsvpd-1.6.4.orig/Makefile.in lsvpd-1.6.4/Makefile.in
+--- lsvpd-1.6.4.orig/Makefile.in	2008-04-25 23:23:11.000000000 +0200
++++ lsvpd-1.6.4/Makefile.in	2008-06-30 19:43:54.000000000 +0200
+@@ -239,7 +239,7 @@
+ lsmcode_SOURCES = src/output/lsmcode.cpp \
+ 		$(update_h_files)
+ 
+-vpdupdate_LDADD = -L. -lz -lstdc++ -lvpd_cxx -lsgutils
++vpdupdate_LDADD = -L. -lz -lstdc++ -lvpd_cxx -lsgutils2
+ vpdupdate_LDFLAGS = -Wall
+ lsvpd_LDADD = -L. -lz -lstdc++ -lvpd_cxx
+ lsvpd_LDFLAGS = -Wall
